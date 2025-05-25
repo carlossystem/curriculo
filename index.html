@@ -3,41 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Galeria de Imagens</title>
+    <title>Currículo - Seu Nome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #004466;
+            --secondary-color: #00bcd4;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --section-background: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: var(--section-background);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
         h1 {
-            color: #333;
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
         }
-        .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
-        .galeria img {
-            width: 350px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
+
+        h3 {
+            margin: 10px 0 5px;
+            color: var(--secondary-color);
         }
-        .galeria img:hover {
-            transform: scale(1.05);
+
+        .contact-info {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 3px 0;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Em Contrução</h1>
-    
-    <div class="galeria">
+    <div class="container">
+        <h1>Seu Nome Completo</h1>
+        <div class="contact-info">
+            <p>📧 seuemail@exemplo.com | 📞 (11) 91234-5678</p>
+            <p>📍 Sua Rua, Número - Cidade, Estado - CEP</p>
+            <p>🔗 <a href="https://linkedin.com/in/seulinkedin" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/seugithub" target="_blank">GitHub</a></p>
+        </div>
 
+        <div class="section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Profissional dedicado, com experiência na área de desenvolvimento de software, com foco em soluções web e mobile. Apaixonado por tecnologia, inovação e resolução de problemas. Busco constantemente o desenvolvimento pessoal e profissional.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Experiência Profissional</h2>
+
+            <h3>Empresa XYZ - Desenvolvedor Front-End</h3>
+            <p><em>Jan 2021 - Atual</em></p>
+            <ul>
+                <li>Desenvolvimento de interfaces responsivas e acessíveis.</li>
+                <li>Manutenção e evolução de sistemas web.</li>
+                <li>Trabalho colaborativo com times de UX/UI e backend.</li>
+            </ul>
+
+            <h3>Empresa ABC - Estagiário de TI</h3>
+            <p><em>Fev 2020 - Dez 2020</em></p>
+            <ul>
+                <li>Suporte técnico e manutenção de sistemas internos.</li>
+                <li>Documentação de processos.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Formação Acadêmica</h2>
+            <h3>Universidade Federal - Análise e Desenvolvimento de Sistemas</h3>
+            <p><em>2018 - 2021</em></p>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript, React</li>
+                <li>Git, GitHub, Docker</li>
+                <li>API REST, Node.js</li>
+                <li>Boa comunicação e trabalho em equipe</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contato</h2>
+            <p>Fique à vontade para entrar em contato. Será um prazer conversar sobre como posso colaborar com seu projeto ou empresa!</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Seu Nome Completo
+        </div>
     </div>
 
 </body>
